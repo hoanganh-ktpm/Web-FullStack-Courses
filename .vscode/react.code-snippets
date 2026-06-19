@@ -1,0 +1,18 @@
+{
+  "Tạo nhanh React Component F8": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "ffc",
+    "body": [
+      "function ${1:${TM_FILENAME_BASE}}() {",
+      "    return (",
+      "        <div>",
+      "            <h2>${1:${TM_FILENAME_BASE}}</h2>",
+      "        </div>",
+      "    );",
+      "}",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Tạo React Functional Component"
+  }
+}
