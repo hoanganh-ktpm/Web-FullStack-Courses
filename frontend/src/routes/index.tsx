@@ -1,9 +1,10 @@
 import Home from '~/pages/Home';
 import Profile from '~/pages/Profile';
+import News from '~/pages/News';
 import DefaultLayout from '~/layouts/DefaultLayout';
-const publicRoute = [
+const publicRoutes = [
     {
-        path: '/home',
+        path: '/',
         component: Home,
         layout: DefaultLayout,
     },
@@ -12,6 +13,11 @@ const publicRoute = [
         component: Profile,
         layout: null,
     },
+    {
+        path: '/news',
+        component: News,
+        layout: DefaultLayout,
+    },
 ];
 
-export { publicRoute };
+export { publicRoutes };
