@@ -5,7 +5,7 @@ function Sidebar() {
         <aside className="h-screen sticky top-16 border-r w-24 md:w-48 flex flex-col items-center py-6">
             <Link
                 to="/"
-                className="flex items-center justify-center gap-4  w-full h-8 md:h-12 hover:bg-gray-200 hover:[-webkit-text-stroke:0.5px_black] border-t border-b"
+                className="flex items-center justify-center gap-4  w-full h-8 md:h-12 hover:bg-gray-200 hover:[-webkit-text-stroke:0.5px_black] border-t border-b transition-all duration-300 hover:-translate-y-1"
             >
                 <HomeIcon />
                 <h3 className="">Home</h3>
@@ -13,7 +13,7 @@ function Sidebar() {
 
             <Link
                 to="/news"
-                className="flex items-center justify-center gap-4  w-full h-8 md:h-12 hover:bg-gray-200 hover:[-webkit-text-stroke:0.5px_black] border-t border-b"
+                className="flex items-center justify-center gap-4  w-full h-8 md:h-12 hover:bg-gray-200 hover:[-webkit-text-stroke:0.5px_black] border-t border-b transition-all duration-300 hover:-translate-y-1"
             >
                 <NewsIcon />
                 <h3 className="">News</h3>
@@ -21,7 +21,7 @@ function Sidebar() {
 
             <Link
                 to="/profile"
-                className="flex items-center justify-center gap-4  w-full h-8 md:h-12 hover:bg-gray-200 hover:[-webkit-text-stroke:0.5px_black] border-t border-b"
+                className="flex items-center justify-center gap-4  w-full h-8 md:h-12 hover:bg-gray-200 hover:[-webkit-text-stroke:0.5px_black] border-t border-b transition-all duration-300 hover:-translate-y-1"
             >
                 <UserPen />
                 <h3 className="">Profile</h3>
