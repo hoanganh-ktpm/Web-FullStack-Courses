@@ -1,4 +1,5 @@
 import Home from '~/pages/Home';
+import CreateCourse from '~/pages/CreateCourse';
 import Profile from '~/pages/Profile';
 import News from '~/pages/News';
 import DefaultLayout from '~/layouts/DefaultLayout';
@@ -16,6 +17,11 @@ const publicRoutes = [
     {
         path: '/news',
         component: News,
+        layout: DefaultLayout,
+    },
+    {
+        path: 'courses/create',
+        component: CreateCourse,
         layout: DefaultLayout,
     },
 ];
