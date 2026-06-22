@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button } from '~/components/ui/button';
+import { Settings } from 'lucide-react';
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '~/components/ui/hover-card';
 import { Link } from 'react-router-dom';
 import CourseCard from '~/components/CourseCard';
@@ -10,6 +10,10 @@ function Home() {
             .then((res) => res.json())
             .then((data) => {
                 setCourses(data);
+            })
+            .catch((err) => {
+                alert('Failure to read courses!');
+                console.log('Failure to read courses!', err);
             });
     }, []);
 
@@ -29,18 +33,16 @@ function Home() {
 
             <HoverCard openDelay={10} closeDelay={100}>
                 <HoverCardTrigger asChild>
-                    <Link to={'/courses/create'} className="flex justify-center items-center fixed bottom-10 right-10">
-                        <Button className="w-14 h-14 rounded-full text-2xl shadow-xl hover:scale-110 hover:-translate-y-2 transition-all">
-                            +
-                        </Button>
+                    <Link
+                        to={'courses/manage'}
+                        className="flex justify-center items-center fixed bottom-10 right-10 w-14 h-14 rounded-full text-2xl shadow-xl hover:scale-110 hover:-translate-y-2 transition-all bg-black text-white"
+                    >
+                        <Settings />
                     </Link>
                 </HoverCardTrigger>
-                <HoverCardContent
-                side='left'
-                sideOffset={15}
-                className="flex w-64 flex-col gap-0.5">
-                    <div className="font-semibold">Add New Course</div>
-                    <div>Click here to add new course!!!!</div>
+                <HoverCardContent side="left" sideOffset={15} className="flex w-64 flex-col gap-0.5">
+                    <div className="font-semibold">Manage Courses</div>
+                    <div>Click here to manage courses</div>
                     <div className="mt-1 text-xs text-muted-foreground">created June 2026</div>
                 </HoverCardContent>
             </HoverCard>

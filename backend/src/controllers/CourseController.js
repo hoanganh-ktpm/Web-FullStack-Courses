@@ -18,6 +18,16 @@ class CourseController {
             res.status(500).json({ error: 'Error, cannot save course!!!' });
         }
     }
+
+    async delete(req, res) {
+        try {
+            const courseId = req.params.id;
+            const deletedCourse = await Course.findByIdAndDelete(courseId);
+            res.json({ message: `Congractulation, deleting course ${deletedCourse.title} successfully!!!` });
+        } catch (error) {
+            res.status(500).json({ error: `Error, cannot delete!!!` });
+        }
+    }
 }
 
 module.exports = new CourseController();

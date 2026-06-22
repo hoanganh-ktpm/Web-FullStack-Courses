@@ -7,4 +7,6 @@ router.post('/store', courseController.store);
 
 router.get('/', courseController.index);
 
+router.delete('/:id', courseController.delete)
+
 module.exports = router;
