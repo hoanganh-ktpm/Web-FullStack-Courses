@@ -41,7 +41,7 @@ class CourseController {
 
     async getDeletedCourses(req, res) {
         try {
-            const deletedCourses = await Course.findDeleted({});
+            const deletedCourses = await Course.findWithDeleted({ deleted: true });
             res.json(deletedCourses);
         } catch (error) {
             res.status(500).json({ error: 'Error in reading deleted courses' });
