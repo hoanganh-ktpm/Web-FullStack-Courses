@@ -28,6 +28,25 @@ class CourseController {
             res.status(500).json({ error: `Error, cannot delete!!!` });
         }
     }
+
+    async restore(req, res) {
+        try {
+            const courseId = req.params.id;
+            await Course.restore({ _id: courseId });
+            res.json({ message: 'Congractulation, adding deleted course successfully!!!' });
+        } catch (error) {
+            res.status(500).json({ error: 'Error, cannot return deleted course!!!' });
+        }
+    }
+
+    async getDeletedCourses(req, res) {
+        try {
+            const deletedCourses = await Course.findDeleted({});
+            res.json(deletedCourses);
+        } catch (error) {
+            res.status(500).json({ error: 'Error in reading deleted courses' });
+        }
+    }
 }
 
 module.exports = new CourseController();

@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
+import { X, Trash2Icon, Trash } from 'lucide-react';
+
 import { Input } from '~/components/ui/input';
 import { Button } from '~/components/ui/button';
-import { X, Trash2Icon } from 'lucide-react';
+
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from '~/components/ui/sheet';
 
 import {
     AlertDialog,
@@ -25,12 +28,15 @@ import {
     TableHeader,
     TableRow,
 } from '~/components/ui/table';
+
 function ManageCourses() {
     const [title, setTitle] = useState('');
     const [desc, setDesc] = useState('');
     const [imgUrl, setImgUrl] = useState('');
     const [price, setPrice] = useState<number | string>(0);
     const [courses, setCourses] = useState([]);
+    const [deletedCourses, setDeletedCourses] = useState([]);
+    const [isSheetOpen, setIsSheetOpen] = useState(false);
 
     const handleSetPrice = (value) => {
         if (value === '') {
@@ -39,6 +45,7 @@ function ManageCourses() {
             setPrice(Number(value) || price);
         }
     };
+
     const handleAddCourse = (e: any) => {
         e.preventDefault();
 
@@ -67,13 +74,34 @@ function ManageCourses() {
             .catch((err) => alert('Failure in adding new course!!!!'));
     };
 
+    const handleOpenTrash = () => {
+        setIsSheetOpen(true);
+        fetch('http://localhost:3000/api/courses/deleted-courses')
+            .then((res) => res.json())
+            .then((data) => setDeletedCourses(data))
+            .catch((err) => {
+                alert('Failure to read deleted courses!');
+                console.log('Failure to read deleted courses! ', err);
+            });
+    };
+
     const handleDelete = (courseId) => {
         fetch(`http://localhost:3000/api/courses/${courseId}`, {
             method: 'DELETE',
-        }).then(() => alert('Delete successfully!!!'));
-        setCourses(courses.filter((course: any) => course._id !== courseId));
+        }).then(() => {
+            alert('Delete successfully!!!');
+            setCourses(courses.filter((course: any) => course._id !== courseId));
+        });
     };
 
+    const handleRestore = (courseId) => {
+        fetch(`http://localhost:3000/api/courses/restore/${courseId}`, {
+            method: 'PATCH',
+        }).then(() => {
+            alert('Restore successfully!!!');
+            setDeletedCourses(deletedCourses.filter((course: any) => course._id !== courseId));
+        });
+    };
     useEffect(() => {
         fetch('http://localhost:3000/api/courses')
             .then((res) => res.json())
@@ -82,7 +110,7 @@ function ManageCourses() {
                 alert('Failure to read courses!');
                 console.log('Failure to read courses! ', err);
             });
-    }, []);
+    }, [deletedCourses]);
 
     return (
         <div>
@@ -121,7 +149,46 @@ function ManageCourses() {
                 </Button>
             </form>
 
-            <h2 className="text-2xl font-bold mt-6">Created Courses: </h2>
+            <div className="flex justify-between items-center mt-6 md:mr-20">
+                <h2 className="text-2xl font-bold">Created Courses: </h2>
+
+                <Button variant="outline" className="w-12 h-12 cursor-pointer" onClick={handleOpenTrash}>
+                    <Trash />
+                </Button>
+            </div>
+
+            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+                <SheetContent className="w-[400px] sm:w-[540px] overflow-y-auto">
+                    <SheetHeader>
+                        <SheetTitle>Your Trash</SheetTitle>
+                        <SheetDescription>Manage deleted courses</SheetDescription>
+                    </SheetHeader>
+
+                    <div className="mt-6 flex flex-col gap-4">
+                        {deletedCourses.map((course: any) => (
+                            <div key={course._id} className="flex justify-between items-center border p-3 rounded-lg">
+                                <div>
+                                    <p className="font-semibold">{course.title}</p>
+                                    <p className="text-sm text-gray-500">{course.price}$</p>
+                                </div>
+                                <div className="flex gap-2">
+                                    <Button
+                                        size="sm"
+                                        variant="outline"
+                                        className="cursor-pointer"
+                                        onClick={() => handleRestore(course._id)}
+                                    >
+                                        Restore
+                                    </Button>
+                                </div>
+                            </div>
+                        ))}
+                        {deletedCourses.length === 0 && (
+                            <p className="text-center text-gray-500 mt-10">The trash is empty</p>
+                        )}
+                    </div>
+                </SheetContent>
+            </Sheet>
 
             <form>
                 <Table className="mt-12 border-t">

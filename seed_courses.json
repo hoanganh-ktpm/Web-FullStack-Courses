@@ -1,62 +1,302 @@
 [
-  {
-    "title": "Lập trình C++ Cơ bản đến Nâng cao",
-    "description": "Nắm vững tư duy lập trình nền tảng, cấu trúc dữ liệu và giải thuật với C++.",
-    "imgUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500",
-    "price": 850000
-  },
-  {
-    "title": "ReactJS Masterclass: Từ Zero đến Hero",
-    "description": "Làm chủ React 18, React Router, Hooks và quản lý State với Redux Toolkit.",
-    "imgUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500",
-    "price": 1250000
-  },
-  {
-    "title": "NodeJS & MongoDB: Xây dựng Backend Thực chiến",
-    "description": "Khóa học thiết kế RESTful API chuẩn quốc tế với Express và Mongoose.",
-    "imgUrl": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=500",
-    "price": 1500000
-  },
-  {
-    "title": "Mastering UI/UX Design với Figma",
-    "description": "Khóa học thiết kế giao diện Web/App siêu đẹp, tự tin đi làm Designer.",
-    "imgUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500",
-    "price": 990000
-  },
-  {
-    "title": "Python Data Science & Machine Learning",
-    "description": "Phân tích dữ liệu với Pandas, Numpy và dự đoán AI bằng Scikit-Learn.",
-    "imgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500",
-    "price": 2500000
-  },
-  {
-    "title": "DevOps Thực chiến: Docker & Kubernetes",
-    "description": "Nắm vững quy trình CI/CD, đóng gói ứng dụng bằng Docker và quản lý container.",
-    "imgUrl": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=500",
-    "price": 3000000
-  },
-  {
-    "title": "Flutter Cross-platform App Development",
-    "description": "Lập trình ứng dụng di động chạy mượt mà trên cả iOS và Android bằng Dart.",
-    "imgUrl": "https://images.unsplash.com/photo-1617040619263-41c5a9ce7521?w=500",
-    "price": 1800000
-  },
-  {
-    "title": "English for IT: Tiếng Anh Chuyên Ngành",
-    "description": "Khóa học giao tiếp Tiếng Anh dành riêng cho Dân CNTT đi phỏng vấn và làm việc.",
-    "imgUrl": "https://images.unsplash.com/photo-1546410531-dd4cb13b3420?w=500",
-    "price": 500000
-  },
-  {
-    "title": "Cyber Security Bootcamp: Hacker Mũ Trắng",
-    "description": "Bảo mật hệ thống Website, tìm hiểu về SQL Injection, XSS và phòng chống Hacker.",
-    "imgUrl": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=500",
-    "price": 4500000
-  },
-  {
-    "title": "Xây dựng Web Thương Mại Điện Tử Fullstack",
-    "description": "Dự án tốt nghiệp: Kết hợp React, Node, thanh toán Momo/ZaloPay từ A đến Z.",
-    "imgUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500",
-    "price": 2000000
-  }
+    {
+        "title": "Lập trình C++ Cơ bản đến Nâng cao",
+        "description": "Nắm vững tư duy lập trình nền tảng, cấu trúc dữ liệu và giải thuật với C++.",
+        "imgUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500",
+        "price": 850000
+    },
+    {
+        "title": "ReactJS Masterclass: Từ Zero đến Hero",
+        "description": "Làm chủ React 18, React Router, Hooks và quản lý State với Redux Toolkit.",
+        "imgUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500",
+        "price": 1250000
+    },
+    {
+        "title": "NodeJS & MongoDB: Xây dựng Backend Thực chiến",
+        "description": "Khóa học thiết kế RESTful API chuẩn quốc tế với Express và Mongoose.",
+        "imgUrl": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=500",
+        "price": 1500000
+    },
+    {
+        "title": "Mastering UI/UX Design với Figma",
+        "description": "Khóa học thiết kế giao diện Web/App siêu đẹp, tự tin đi làm Designer.",
+        "imgUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500",
+        "price": 990000
+    },
+    {
+        "title": "Python Data Science & Machine Learning",
+        "description": "Phân tích dữ liệu với Pandas, Numpy và dự đoán AI bằng Scikit-Learn.",
+        "imgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500",
+        "price": 2500000
+    },
+    {
+        "title": "DevOps Thực chiến: Docker & Kubernetes",
+        "description": "Nắm vững quy trình CI/CD, đóng gói ứng dụng bằng Docker và quản lý container.",
+        "imgUrl": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=500",
+        "price": 3000000
+    },
+    {
+        "title": "Flutter Cross-platform App Development",
+        "description": "Lập trình ứng dụng di động chạy mượt mà trên cả iOS và Android bằng Dart.",
+        "imgUrl": "https://images.unsplash.com/photo-1617040619263-41c5a9ce7521?w=500",
+        "price": 1800000
+    },
+    {
+        "title": "English for IT: Tiếng Anh Chuyên Ngành",
+        "description": "Khóa học giao tiếp Tiếng Anh dành riêng cho Dân CNTT đi phỏng vấn và làm việc.",
+        "imgUrl": "https://images.unsplash.com/photo-1546410531-dd4cb13b3420?w=500",
+        "price": 500000
+    },
+    {
+        "title": "Cyber Security Bootcamp: Hacker Mũ Trắng",
+        "description": "Bảo mật hệ thống Website, tìm hiểu về SQL Injection, XSS và phòng chống Hacker.",
+        "imgUrl": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=500",
+        "price": 4500000
+    },
+    {
+        "title": "Xây dựng Web Thương Mại Điện Tử Fullstack",
+        "description": "Dự án tốt nghiệp: Kết hợp React, Node, thanh toán Momo/ZaloPay từ A đến Z.",
+        "imgUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500",
+        "price": 2000000
+    },
+    {
+        "title": "Lập trình Java Spring Boot Thực chiến",
+        "description": "Xây dựng hệ thống Backend Microservices với Java Spring Boot.",
+        "imgUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500",
+        "price": 1750000
+    },
+    {
+        "title": "Vue.js 3 và Composition API",
+        "description": "Học Framework Frontend nhẹ, nhanh và dễ học nhất hiện nay.",
+        "imgUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500",
+        "price": 1100000
+    },
+    {
+        "title": "C# và .NET Core Web API",
+        "description": "Trở thành Backend Developer C# được săn đón ở các công ty Enterprise.",
+        "imgUrl": "https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?w=500",
+        "price": 1600000
+    },
+    {
+        "title": "Lập trình TypeScript nâng cao",
+        "description": "Viết code JavaScript an toàn, rõ ràng và chuẩn Scale cho dự án lớn.",
+        "imgUrl": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=500",
+        "price": 850000
+    },
+    {
+        "title": "Thiết kế CSDL Quan Hệ (SQL) & NoSQL",
+        "description": "Học cách thiết kế Database, tối ưu hóa Query và Indexing chuyên sâu.",
+        "imgUrl": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=500",
+        "price": 950000
+    },
+    {
+        "title": "Làm chủ TailwindCSS và UI Components",
+        "description": "Code CSS nhanh gấp 10 lần với Utility-First CSS Framework.",
+        "imgUrl": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=500",
+        "price": 500000
+    },
+    {
+        "title": "GraphQL API với Apollo Server",
+        "description": "Thay thế RESTful API bằng GraphQL linh hoạt và tối ưu hiệu suất.",
+        "imgUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500",
+        "price": 1200000
+    },
+    {
+        "title": "Phát triển game bằng Unity & C#",
+        "description": "Tự tay làm Game 2D/3D từ con số 0 và đưa lên AppStore/Google Play.",
+        "imgUrl": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=500",
+        "price": 1900000
+    },
+    {
+        "title": "Chứng chỉ AWS Solutions Architect",
+        "description": "Khóa luyện thi chứng chỉ Điện toán đám mây AWS phổ biến nhất thế giới.",
+        "imgUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500",
+        "price": 2200000
+    },
+    {
+        "title": "Phân tích nghiệp vụ IT (Business Analyst)",
+        "description": "Kỹ năng phân tích yêu cầu, vẽ luồng UML và làm việc với khách hàng.",
+        "imgUrl": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500",
+        "price": 1500000
+    },
+    {
+        "title": "Swift & iOS App Development",
+        "description": "Lập trình ứng dụng iPhone/iPad native với ngôn ngữ Swift hiện đại.",
+        "imgUrl": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500",
+        "price": 2000000
+    },
+    {
+        "title": "Kotlin & Android App Development",
+        "description": "Lập trình Android gốc với ngôn ngữ Kotlin được Google khuyên dùng.",
+        "imgUrl": "https://images.unsplash.com/photo-1607252654015-f847132e604d?w=500",
+        "price": 1800000
+    },
+    {
+        "title": "Blockchain & Smart Contract với Solidity",
+        "description": "Bước chân vào thế giới Web3, DApps và lập trình Hợp đồng thông minh.",
+        "imgUrl": "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=500",
+        "price": 2800000
+    },
+    {
+        "title": "Lập trình Go (Golang) Microservices",
+        "description": "Ngôn ngữ của Cloud! Xây dựng backend siêu tốc độ với Go.",
+        "imgUrl": "https://images.unsplash.com/photo-1528310263300-6020584407b7?w=500",
+        "price": 1700000
+    },
+    {
+        "title": "Lập trình Rust Cơ bản",
+        "description": "Ngôn ngữ an toàn và hiệu năng cao nhất hiện nay, thay thế C/C++.",
+        "imgUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=500",
+        "price": 1900000
+    },
+    {
+        "title": "Automation Testing với Selenium & Cypress",
+        "description": "Làm chủ kiểm thử tự động, trở thành QA/QC Engineer chuyên nghiệp.",
+        "imgUrl": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=500",
+        "price": 1400000
+    },
+    {
+        "title": "Hệ điều hành Linux & Bash Scripting",
+        "description": "Thao tác mượt mà trên Server Linux và tự động hóa với Scripting.",
+        "imgUrl": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=500",
+        "price": 750000
+    },
+    {
+        "title": "Xây dựng Data Pipeline với Apache Kafka",
+        "description": "Xử lý luồng dữ liệu thời gian thực cho các hệ thống Big Data lớn.",
+        "imgUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500",
+        "price": 2600000
+    },
+    {
+        "title": "SvelteKit & Frontend Tương lai",
+        "description": "Trải nghiệm framework không Virtual DOM, hiệu năng đỉnh cao.",
+        "imgUrl": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500",
+        "price": 1050000
+    },
+    {
+        "title": "Làm chủ Cấu Trúc Dữ Liệu chuyên sâu",
+        "description": "Luyện tập 300+ bài toán LeetCode, tự tin vượt qua phỏng vấn thuật toán.",
+        "imgUrl": "https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?w=500",
+        "price": 1500000
+    },
+    {
+        "title": "Phát triển Desktop App với Electron",
+        "description": "Dùng công nghệ Web (HTML, CSS, JS) để viết ứng dụng Windows/Mac.",
+        "imgUrl": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=500",
+        "price": 1100000
+    },
+    {
+        "title": "Redis Caching & Tối ưu hiệu năng",
+        "description": "Giải quyết bài toán hàng triệu traffic bằng công nghệ In-memory Cache.",
+        "imgUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500",
+        "price": 1300000
+    },
+    {
+        "title": "Next.js 14 Thực chiến Fullstack",
+        "description": "Xây dựng ứng dụng SSR/SSG chuẩn SEO với App Router mới nhất.",
+        "imgUrl": "https://images.unsplash.com/photo-1618477388954-7f1546e09e13?w=500",
+        "price": 1800000
+    },
+    {
+        "title": "Quản lý dự án Agile & Scrum",
+        "description": "Kỹ năng mềm cực kỳ cần thiết để làm việc nhóm hiệu quả trong ngành IT.",
+        "imgUrl": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=500",
+        "price": 800000
+    },
+    {
+        "title": "Xử lý ảnh bằng Python OpenCV",
+        "description": "Làm quen với Computer Vision, nhận diện khuôn mặt và biển số xe.",
+        "imgUrl": "https://images.unsplash.com/photo-1527430253228-e93688616381?w=500",
+        "price": 1650000
+    },
+    {
+        "title": "Lập trình nhúng cơ bản với Arduino",
+        "description": "Bắt đầu với IoT, viết code điều khiển phần cứng và linh kiện điện tử.",
+        "imgUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500",
+        "price": 950000
+    },
+    {
+        "title": "Angular Framework toàn tập",
+        "description": "Làm chủ kiến trúc Component, Services và Dependency Injection của Angular.",
+        "imgUrl": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=500",
+        "price": 1350000
+    },
+    {
+        "title": "Lập trình PHP & Laravel Thực chiến",
+        "description": "Xây dựng nhanh một hệ thống quản lý CMS mạnh mẽ với Laravel.",
+        "imgUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=500",
+        "price": 1200000
+    },
+    {
+        "title": "Bảo mật Web Nâng cao",
+        "description": "Hiểu rõ JWT, OAuth2, Session và các cơ chế Authentication hiện đại.",
+        "imgUrl": "https://images.unsplash.com/photo-1614064641913-6b1e6ce48e9c?w=500",
+        "price": 1450000
+    },
+    {
+        "title": "Làm chủ Firebase cho Web & Mobile",
+        "description": "Xây dựng ứng dụng Real-time mà không cần viết một dòng code Backend nào.",
+        "imgUrl": "https://images.unsplash.com/photo-1622322301078-437537bba361?w=500",
+        "price": 900000
+    },
+    {
+        "title": "Git & GitHub Toàn tập",
+        "description": "Làm chủ các lệnh Git, giải quyết Conflict và quy trình làm việc nhóm.",
+        "imgUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=500",
+        "price": 400000
+    },
+    {
+        "title": "Thiết kế hệ thống phân tán (System Design)",
+        "description": "Cách thiết kế hệ thống chịu tải cao cho hàng triệu người dùng.",
+        "imgUrl": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500",
+        "price": 3500000
+    },
+    {
+        "title": "Lập trình Game Roblox bằng Lua",
+        "description": "Sáng tạo thế giới riêng của bạn và kiếm tiền từ việc làm game Roblox.",
+        "imgUrl": "https://images.unsplash.com/photo-1605379399642-870262d3d051?w=500",
+        "price": 850000
+    },
+    {
+        "title": "Google Cloud Platform (GCP) Fundamentals",
+        "description": "Vận hành và triển khai ứng dụng lên nền tảng đám mây của Google.",
+        "imgUrl": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=500",
+        "price": 1800000
+    },
+    {
+        "title": "Natural Language Processing (NLP)",
+        "description": "Xử lý ngôn ngữ tự nhiên, tạo Chatbot AI với thư viện Hugging Face.",
+        "imgUrl": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500",
+        "price": 2700000
+    },
+    {
+        "title": "Micro Frontends Architecture",
+        "description": "Chia nhỏ ứng dụng Frontend để các team có thể phát triển độc lập.",
+        "imgUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500",
+        "price": 2100000
+    },
+    {
+        "title": "Webpack & Vite: Build Tool Mastery",
+        "description": "Hiểu rõ cách đóng gói dự án JS, tối ưu tốc độ build và load trang.",
+        "imgUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500",
+        "price": 1000000
+    },
+    {
+        "title": "Thiết kế Đồ Họa Cơ Bản với Photoshop/AI",
+        "description": "Bổ sung kỹ năng thao tác ảnh và vector dành cho dân làm Frontend.",
+        "imgUrl": "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=500",
+        "price": 1150000
+    },
+    {
+        "title": "Nghề Kỹ Sư Dữ Liệu (Data Engineer)",
+        "description": "Từ thu thập, ETL đến xây dựng Data Warehouse hoàn chỉnh.",
+        "imgUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500",
+        "price": 2400000
+    },
+    {
+        "title": "Lập trình Smart TV App (Tizen/WebOS)",
+        "description": "Mở rộng mảng lập trình sang các ứng dụng chạy trên TV thông minh.",
+        "imgUrl": "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500",
+        "price": 1500000
+    }
 ]
