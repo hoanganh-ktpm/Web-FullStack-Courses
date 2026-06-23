@@ -22,8 +22,8 @@ class CourseController {
     async delete(req, res) {
         try {
             const courseId = req.params.id;
-            const deletedCourse = await Course.findByIdAndDelete(courseId);
-            res.json({ message: `Congractulation, deleting course ${deletedCourse.title} successfully!!!` });
+            await Course.delete({ _id: courseId });
+            res.json({ message: `Congractulation, deleting this course successfully!!!` });
         } catch (error) {
             res.status(500).json({ error: `Error, cannot delete!!!` });
         }

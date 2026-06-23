@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Lập trình C++ Cơ bản đến Nâng cao",
+    "description": "Nắm vững tư duy lập trình nền tảng, cấu trúc dữ liệu và giải thuật với C++.",
+    "imgUrl": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500",
+    "price": 850000
+  },
+  {
+    "title": "ReactJS Masterclass: Từ Zero đến Hero",
+    "description": "Làm chủ React 18, React Router, Hooks và quản lý State với Redux Toolkit.",
+    "imgUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500",
+    "price": 1250000
+  },
+  {
+    "title": "NodeJS & MongoDB: Xây dựng Backend Thực chiến",
+    "description": "Khóa học thiết kế RESTful API chuẩn quốc tế với Express và Mongoose.",
+    "imgUrl": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=500",
+    "price": 1500000
+  },
+  {
+    "title": "Mastering UI/UX Design với Figma",
+    "description": "Khóa học thiết kế giao diện Web/App siêu đẹp, tự tin đi làm Designer.",
+    "imgUrl": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500",
+    "price": 990000
+  },
+  {
+    "title": "Python Data Science & Machine Learning",
+    "description": "Phân tích dữ liệu với Pandas, Numpy và dự đoán AI bằng Scikit-Learn.",
+    "imgUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500",
+    "price": 2500000
+  },
+  {
+    "title": "DevOps Thực chiến: Docker & Kubernetes",
+    "description": "Nắm vững quy trình CI/CD, đóng gói ứng dụng bằng Docker và quản lý container.",
+    "imgUrl": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=500",
+    "price": 3000000
+  },
+  {
+    "title": "Flutter Cross-platform App Development",
+    "description": "Lập trình ứng dụng di động chạy mượt mà trên cả iOS và Android bằng Dart.",
+    "imgUrl": "https://images.unsplash.com/photo-1617040619263-41c5a9ce7521?w=500",
+    "price": 1800000
+  },
+  {
+    "title": "English for IT: Tiếng Anh Chuyên Ngành",
+    "description": "Khóa học giao tiếp Tiếng Anh dành riêng cho Dân CNTT đi phỏng vấn và làm việc.",
+    "imgUrl": "https://images.unsplash.com/photo-1546410531-dd4cb13b3420?w=500",
+    "price": 500000
+  },
+  {
+    "title": "Cyber Security Bootcamp: Hacker Mũ Trắng",
+    "description": "Bảo mật hệ thống Website, tìm hiểu về SQL Injection, XSS và phòng chống Hacker.",
+    "imgUrl": "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=500",
+    "price": 4500000
+  },
+  {
+    "title": "Xây dựng Web Thương Mại Điện Tử Fullstack",
+    "description": "Dự án tốt nghiệp: Kết hợp React, Node, thanh toán Momo/ZaloPay từ A đến Z.",
+    "imgUrl": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500",
+    "price": 2000000
+  }
+]

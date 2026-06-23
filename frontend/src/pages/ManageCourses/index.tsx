@@ -1,8 +1,20 @@
 import { useState, useEffect } from 'react';
 import { Input } from '~/components/ui/input';
 import { Button } from '~/components/ui/button';
-import { X } from 'lucide-react';
+import { X, Trash2Icon } from 'lucide-react';
 
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogMedia,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+} from '~/components/ui/alert-dialog';
 import {
     Table,
     TableBody,
@@ -104,7 +116,9 @@ function ManageCourses() {
                     value={price}
                     onChange={(e) => handleSetPrice(e.target.value)}
                 />
-                <Button type="submit">Save Course</Button>
+                <Button type="submit" className="cursor-pointer">
+                    Save Course
+                </Button>
             </form>
 
             <h2 className="text-2xl font-bold mt-6">Created Courses: </h2>
@@ -129,12 +143,36 @@ function ManageCourses() {
                                 <TableCell>{course.price}</TableCell>
                                 <TableCell>{new Date(course.createdAt).toLocaleDateString('vi-VN')}</TableCell>
                                 <TableCell>
-                                    <Button
-                                        onClick={() => handleDelete(course._id)}
-                                        className="text-white cursor-pointer  hover:-translate-y-0.5 transition-all"
-                                    >
-                                        <X />
-                                    </Button>
+                                    <AlertDialog>
+                                        <AlertDialogTrigger asChild>
+                                            <Button className="text-white cursor-pointer  hover:-translate-y-0.5 transition-all">
+                                                <X />
+                                            </Button>
+                                        </AlertDialogTrigger>
+                                        <AlertDialogContent size="sm">
+                                            <AlertDialogHeader>
+                                                <AlertDialogMedia className="bg-destructive/10 text-destructive dark:bg-destructive/20 dark:text-destructive">
+                                                    <Trash2Icon />
+                                                </AlertDialogMedia>
+                                                <AlertDialogTitle>Delete chat?</AlertDialogTitle>
+                                                <AlertDialogDescription>
+                                                    This will permanently delete this course {course.title}.
+                                                </AlertDialogDescription>
+                                            </AlertDialogHeader>
+                                            <AlertDialogFooter>
+                                                <AlertDialogCancel variant="outline" className="cursor-pointer">
+                                                    Cancel
+                                                </AlertDialogCancel>
+                                                <AlertDialogAction
+                                                    variant="destructive"
+                                                    onClick={() => handleDelete(course._id)}
+                                                    className="cursor-pointer"
+                                                >
+                                                    Delete
+                                                </AlertDialogAction>
+                                            </AlertDialogFooter>
+                                        </AlertDialogContent>
+                                    </AlertDialog>
                                 </TableCell>
                             </TableRow>
                         ))}
